@@ -22,7 +22,7 @@ In a scenario where our test data might be altered, the test can be rewritten to
 every time the test class is run, and get the details we used in creation. This has the disadvantage that if the 
 creation functionality is down, the test trying to read data will also fail.
 
-I assumed the id "123456789123456789123456" does not exist in the system. 
+I assumed the id `123456789123456789123456` does not exist in the system. 
 
 I assumed the validation of length for String fields out of scope and covered in unit tests by the team.
 
@@ -39,7 +39,7 @@ that says 404 in the response body, but in fact the status code is 200.
 - The call to retrieve the last 5 politicians returns the last 10 instead.
 - You can create a politician with a risk value outside of the 1-5 range.
 - You can create a politician with a negative year of birth.
-You can create a politician with any of the mandatory fields set to null as well as string fields set to """. 
+You can create a politician with any of the mandatory fields set to null as well as string fields set to `""`. 
 It's unclear from the requirements which if any of the fields should accept null or empty values.
 
 For the last point I did not write any tests, in the interest of speed. 
@@ -47,4 +47,3 @@ For the last point I did not write any tests, in the interest of speed.
 In a real team scenario I would first clarify the requirements surrounding null and empty values as well as what 
 validation we want to do on these inputs.
 Then I would sit with the developers and advocate for adding unit-level tests to cover these corner cases.
-
