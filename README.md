@@ -2,7 +2,7 @@
 
 ## Running the tests
 
-To run the tests you wil need Java installed (Should work with either Java 8 or 11).
+To run the tests you will need Java installed (Should work with either Java 8 or 11).
 
 You can run the tests by executing:
 
@@ -46,5 +46,5 @@ For the last point I did not write any tests, in the interest of speed.
 
 In a real team scenario I would first clarify the requirements surrounding null and empty values as well as what 
 validation we want to do on these inputs.
-Then I would sit wih the developers and advocate for adding unit-level tests to cover these corner cases.
+Then I would sit with the developers and advocate for adding unit-level tests to cover these corner cases.
 
