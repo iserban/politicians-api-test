@@ -28,7 +28,7 @@ public class GetPoliticiansByIdTest {
     public void readShouldReturn200StatusCode() {
         when().
                 get(getUrl(TEST_ID)).
-                then().
+        then().
                 assertThat().
                 statusCode(200);
     }
@@ -37,7 +37,7 @@ public class GetPoliticiansByIdTest {
     public void readShouldReturn404StatusCodeForInvalidId() {
         when().
                 get(getUrl("123")).
-                then().
+        then().
                 assertThat().
                 statusCode(404);
     }
